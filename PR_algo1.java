@@ -11,9 +11,9 @@ public class PR_algo1 {
         int sisib = Integer.parseInt(kb.nextLine());
         System.out.print("Masukkan sisi ketiga dari segitiga itu: ");
         int sisic = Integer.parseInt(kb.nextLine());
-        int pitagoras_a = (int) Math.sqrt(Math.pow(sisia, 2) + Math.pow(sisib, 2));
-        int pitagoras_b = (int) Math.sqrt(Math.pow(sisia, 2) + Math.pow(sisic, 2));
-        int pitagoras_c = (int) Math.sqrt(Math.pow(sisia, 2) + Math.pow(sisib, 2));
+        int pitagoras_a = (int) Math.sqrt(sisic*sisic + sisib*sisib);
+        int pitagoras_b = (int) Math.sqrt(sisia*sisia + sisic*sisic);
+        int pitagoras_c = (int) Math.sqrt(sisia*sisia + sisib*sisib);
 
         if (sisia == sisib & sisia == sisic) {
             System.out.println("Segitiga ini adalah segitiga sama sisi");
